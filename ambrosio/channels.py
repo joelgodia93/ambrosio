@@ -6,7 +6,7 @@ class ClassName(object):
         super(Channel, self).__init__()
         self.name = name
 
-class TextChannel(object):
+class TextChannel(Channel):
     """Channel class, reads commands from file"""
     def __init__(self, name="TextChannel"):
         super(TextChannel, self).__init__()
