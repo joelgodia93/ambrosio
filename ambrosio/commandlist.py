@@ -12,7 +12,7 @@ class CommandList(object):
 
 
     def append(self, command):
-        self.commans.append(command)
+        self.commands.append(command)
 
 
     def lenght(self):

@@ -14,12 +14,12 @@ class Action(object):
 
 class MusicPlayer(Action):
     """MusicPlayer for Ambrosio"""
-    def __init__(self. arg):
+    def __init__(self):
         super(MusicPlayer, self).__init__()
         self.triggers = ["music", "audio"]
 
-    def do(self):
-        print "Will play music"
+    def do(self, command):
+        print "Will play music", " ".join(command)
 
     def is_for_you(self, word):
         if word in self.triggers:
