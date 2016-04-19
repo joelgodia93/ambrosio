@@ -1,4 +1,5 @@
 
+
 import telepot
 
 
@@ -17,6 +18,10 @@ class AmbrosioBot(telepot.Bot):
             command = msg['text']
             if self.clist is not None:
                 self.clist.append(command)
+                self.chat_id = chat_id
+
+
+
 
 class TelegramChannel(Channel):
     """Channel class, received commands from telegram"""
@@ -33,3 +38,6 @@ class TelegramChannel(Channel):
 
     def msg_avail(self):
         return len(self.messages) > 0
+
+    def response(self, response):
+        pass
