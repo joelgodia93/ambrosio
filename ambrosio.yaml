@@ -1,0 +1,9 @@
+telegram:
+  toke:
+  usuaris:
+    -Joel Godia
+
+musicplayer:
+  directories:
+    -/home/musicplayer
+    -/home/
